@@ -7,7 +7,7 @@ import json
 
 views = Blueprint('views', __name__)
 
-@views.route('/', methods=['GET', 'POST'])
+@views.route('', methods=['GET', 'POST'])
 @login_required
 def index():
     if request.method == 'POST':
